@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    background-color: #00ccff;
+}
+
+section {
+    height: 100vh;
+    color: #00ccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.one {
+    background-color: antiquewhite;
+}
+
+.two {
+    background-color: aquamarine;
+}
+
+.new {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-color: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
